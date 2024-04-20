@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>EventReg</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do App -->
+    <header>
+        <div class="title">
+            <h1>Relação de Inscritos/Presentes</h1>
+        </div>
+        <div class="banner">
+            <img src="img/EventReg.jpg" alt="Banner do App EventReg">
+        </div>
+    </header>
+
+     <!-- Opções para adicionar um novo "item" (inscrito/presente) -->
+     <!-- Quantity vai representar o CPF e Price o E-mail -->
+    <section class="newItem">
+        <input type="text" id="newInput" placeholder="Adicionar nome Inscrito/Presente:">
+        <input type="text" id="newQuantity" placeholder="CPF(11 números):">
+        <input type="text" id="newPrice" placeholder="E-mail:">
+        <button onclick="newItem()" class="addBtn">Adicionar</button>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>E-mail</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
